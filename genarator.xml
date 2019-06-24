@@ -11,8 +11,8 @@
 		</commentGenerator>
 		<!--数据库连接的信息：驱动类、连接地址、用户名、密码 -->
 		<jdbcConnection driverClass="com.mysql.jdbc.Driver"
-			connectionURL="jdbc:mysql://localhost:3306/mybatis" userId="root"
-			password="root">
+			connectionURL="jdbc:mysql://localhost:3306/mht_myx" userId="root"
+			password="15797624891">
 		</jdbcConnection>
 		<!-- <jdbcConnection driverClass="oracle.jdbc.OracleDriver" connectionURL="jdbc:oracle:thin:@127.0.0.1:1521:yycg" 
 			userId="yycg" password="yycg"> </jdbcConnection> -->
@@ -24,7 +24,7 @@
 		</javaTypeResolver>
 
 		<!-- targetProject:生成PO类的位置 -->
-		<javaModelGenerator targetPackage="cn.itheima.pojo"
+		<javaModelGenerator targetPackage="com.myx.server.domain"
 			targetProject=".\src">
 			<!-- enableSubPackages:是否让schema作为包的后缀 -->
 			<property name="enableSubPackages" value="false" />
@@ -32,14 +32,14 @@
 			<property name="trimStrings" value="true" />
 		</javaModelGenerator>
 		<!-- targetProject:mapper映射文件生成的位置 -->
-		<sqlMapGenerator targetPackage="cn.itheima.mapper"
+		<sqlMapGenerator targetPackage="com.myx.server.mapper"
 			targetProject=".\src">
 			<!-- enableSubPackages:是否让schema作为包的后缀 -->
 			<property name="enableSubPackages" value="false" />
 		</sqlMapGenerator>
 		<!-- targetPackage：mapper接口生成的位置 -->
 		<javaClientGenerator type="XMLMAPPER"
-			targetPackage="cn.itheima.mapper" targetProject=".\src">
+			targetPackage="com.myx.server.mapper" targetProject=".\src">
 			<!-- enableSubPackages:是否让schema作为包的后缀 -->
 			<property name="enableSubPackages" value="false" />
 		</javaClientGenerator>
@@ -47,12 +47,12 @@
 		<!-- <table tableName="items"></table> -->
 		<!-- <table tableName="tbl_dept"></table> <table tableName="orderdetail"></table> -->
 		<!-- <table tableName="tbl_emp"></table> -->
-		<table tableName="user" ></table>
-		<table tableName="items"></table>
+		<table tableName="user_login_log" ></table>
+		<!--<table tableName="items"></table>
 		<table tableName="orderdetail"></table>
 		<table tableName="person"></table>
 		<table tableName="orders"></table>
-		<table tableName="card"></table>
+		<table tableName="card"></table>-->
 
 		<!-- <table schema="" tableName="sys_user"></table> <table schema="" tableName="sys_role"></table> 
 			<table schema="" tableName="sys_permission"></table> <table schema="" tableName="sys_user_role"></table> 
