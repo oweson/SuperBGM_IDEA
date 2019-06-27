@@ -47,7 +47,7 @@
 		<!-- <table tableName="items"></table> -->
 		<!-- <table tableName="tbl_dept"></table> <table tableName="orderdetail"></table> -->
 		<!-- <table tableName="tbl_emp"></table> -->
-		<table tableName="user_login_log" ></table>
+		<table tableName="user_expression" ></table>
 		<!--<table tableName="items"></table>
 		<table tableName="orderdetail"></table>
 		<table tableName="person"></table>
